@@ -26,7 +26,7 @@ Using either email, WhatsApp or SMS (will need to self-find, outside CS50 view)
 STAFFS PAGE
 Sending of data to staffs:
 Using a database would definitely help, WHERE UPDATING THE DATA EVERY 20 SECOND might be necessary
-- different colors for payment methods, though most likely only online, so payment has to be made for order to go through
+..different colors for payment methods, though most likely only online, so payment has to be made for order to go through
 
 Notification:
 With a click of a button on whichever order is done, the order will be made for collection
@@ -38,7 +38,7 @@ If some directly orders from the cafe, Staffs will have to manually recalibrate 
 
 Other functionalities:
 .Login via Email and Username --> password will be considered
-- Allows for records of previous purchases to be stored and give them possible suggestions of what they would like to order
+..Allows for records of previous purchases to be stored and give them possible suggestions of what they would like to order
 
 .A rewards function (possible implementation)
 

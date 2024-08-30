@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-16">
+  <title>Khoon Cafe</title>
+  <link rel="stylesheet" href="static/styles_main.css">
+</head>
+<body>
+<nav>
+  <a href="{{ url_for('home') }}"><img id=logo src="static/beringoo.png"><!--actual image to be added--></a>
+  <a href="{{ url_for('menu') }}">Menu</a>
+  <a href="{{ url_for('order') }}">Order Here</a>
+  <a href="{{ url_for('feedback') }}">Feedback</a>
+</nav>
+
+<main>
+  <h1>Order</h1>
+  <h2>Limited Time Deals</h2>
+
+  <h2>Waffles</h2>
+    <li><h3>Plain</h3></li>
+    <li><h3>Kaya</h3></li>
+    <li><h3>Peanut Butter</h3></li>
+    <li><h3>Butter</h3></li>
+    <li><h3>Chocolate</h3></li>
+  </ul>
+
+  <h2>Yaowarat Buns</h2>
+    <li><h3>Kaya</h3></li>
+    <li><h3>Peanut Butter</h3></li>
+    <li><h3>Chocolate</h3></li>
+  </ul>
+
+  <h2>Meals</h2>
+  <h3>If you are looking for a full meal, you can also order Khoon Cafe's Baked Rice and Pasta. Our piping hot meal is sure to fill you up :] (All meals has a choice of Tomato or Cream Sauce) </h3>
+    <h3>Base: Baked Rice, Fusilli</h3>
+  <ul>
+    <li><h3>Chicken Sausage</h3></li>
+    <li><h3>Mushroom Vegan</h3></li>
+  </ul>
+
+  <h2>Drinks</h2>
+  <h3>We offer a large variety of drinks, hot and cold, to boost your day. Boasting a large collection of Coffee and Tea, we are sure that you'll be able to find your pick here.</h3>
+  <h2>Coffee</h2>
+  <ul>
+    <li><h3>Khoon Vietnamese Coffee (Milk/Black)</h3></li>
+    <li><h3>Khoon Mocha</h3></li>
+  </ul>
+
+  <h2>Tea</h2>
+  <ul>
+    <li><h3>Matcha Latte</h3></li>
+    <li><h3>Ginger Milk Tea</h3></li>
+    <li><h3>Taiwanese Milk Tea</h3></li>
+    <li><h3>Iced Lemon Tea</h3></li>
+  </ul>
+
+  <h2>Others</h2>
+  <ul>
+    <li><h3>Khoon Chocolate</h3></li>
+  </ul>
+
+
+</main>
+<footer style="height=:100%;">
+  <div id="contact_info">
+  <h2 style="font-size: 30">Contact Us</h2>
+  <p>Phone Number: 0000 0000</p>
+  <p>Email: aaa@gmail.com</p>
+  <p>Insta Page: ascasbcbi</p>
+  <p>Twitter: ascsaca</p>
+  </div>
+
+  <div id="location">
+    <h2 style="font-size: 30">Our Location</h2><br>
+    <p>You can find us at Level 2 near the library.</p>
+    <!-- <img href="add drawn image here when entering" -->
+  </div>
+
+  <div id="miscell_info">
+  <a href="{{ url_for('terms') }}><h2 style="font-size: 30">Terms & Regulations</h2></a>
+  </div>
+  <br><br><br><br><br><br><br><br><br>
+</footer>
+
+<div id="web_info">
+<p>@2024 Khoon</p>
+</div>
+</body>
+</html>

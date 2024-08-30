@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Khoon Cafe</title>
+  <link rel="stylesheet" href="static/styles_main.css">
+</head>
+<body>
+<nav class="topstrip">
+  <a href="{{ url_for('home') }}"><img class=logo src="static/beringoo.png"><!--actual image to be added--></a>
+  <a href="{{ url_for('menu') }}">Menu</a>
+  <a href="{{ url_for('order') }}">Order Here</a>
+  <a href="{{ url_for('feedback') }}">Feedback</a>
+</nav>
+
+<main>
+  <h1>Welcome back!</h1>
+  <div class="queue">
+    <!-- probably using flex to split into two numebr boxes -->
+    <h2>Queue Number: 000</h2>
+    <!-- to add queue number from latest database, if ordered, can display here too (if possible) else, just show them number after ordering-->
+    <h2>Order Number: </h2>
+  </div>
+
+  <div class="personal"> <!-- if guest, no display -->
+    <h2>What would you like today?</h2>
+    <!-- add top 3 choices -->
+    <!-- to add personal favourites which will link to the payment page for the set they have ordered -->
+  </div>
+
+  <div class="about">
+    <h2>About Us</h2>
+    <p class="normal_text">Khoon Cafe is a delightful spot for students to catch a break and for anyone looking to indulge in a tasty treat. Whether you're in the mood for something sweet or savory, there's something on the menu for everyone. We would like to hear your feedback on our menu and your opinions on what could be improved. Enjoy!</p>
+  </div>
+</main>
+
+<footer>
+  <div class="contact_info">
+  <h2 style="font-size: 30">Contact Us</h2>
+  <p>Phone Number: 0000 0000</p>
+  <p>Email: aaa@gmail.com</p>
+  <p>Insta Page: ascasbcbi</p>
+  <p>Twitter: ascsaca</p>
+  </div>
+
+  <div class="location">
+    <h2 style="font-size: 30">Our Location</h2><br>
+    <p>You can find us at Level 2 near the library.</p>
+    <!-- <img href="add drawn image here when entering" -->
+  </div>
+
+  <div class="miscell_info">
+  <a href="{{ url_for('terms') }}"><h2 style='font-size: 30'>Terms & Regulations</h2></a>
+  </div>
+  <br><br><br><br><br><br><br><br><br>
+</footer>
+
+<div class="web_info">
+<p>@2024 Khoon</p>
+</div>
+
+</body>
+</html>
+
+<!-- page to be updated every 10s -> using javascript? -->
+<!-- to check for queue, stuff... -->

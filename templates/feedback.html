@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-16">
+  <title>Khoon Cafe</title>
+  <link rel="stylesheet" href="static/styles_main.css">
+</head>
+<body>
+<nav>
+  <a href="{{ url_for('home') }}"><img id=logo src="static/beringoo.png"><!--actual image to be added--></a>
+  <a href="{{ url_for('menu') }}">Menu</a>
+  <a href="{{ url_for('order') }}">Order Here</a>
+  <a href="{{ url_for('feedback') }}">Feedback</a>
+</nav>
+
+<main>
+<h1>Send us your feedback here!</h1>
+<form action="/home" id=feedback_form>
+  <h2>Items for feedback:</h2>
+  <select name="menu_items" id="menu_items" multiple>
+    <option value="Waffles">Waffles</option>
+    <option value="Sweet Buns">Sweet Buns</option>
+    <option value="Hotdog/Burger">Hotdog Or Burger</option>
+    <option value="Meals">Meals</option>
+    <option value="Drinks">Drinks</option>
+  </select>
+  <br>
+  <textarea name="menu_feedback" id="menu_feedback" rows=3 cols=40 placeholder="Write your feedback here"><h2>What can be improved on?</h2></textarea>
+  <br>
+  <textarea name="menu_feedback" id="menu_feedback" placeholder="Anything that you would like to suggest?" rows=3 cols=40 ><h2>General Feedback</h2></textarea>
+  <input type="submit" value="Submit Feedback">
+</form>
+</main>
+  
+
+<footer style="height=:100%;">
+  <div id="contact_info">
+  <h2 style="font-size: 30">Contact Us</h2>
+  <p>Phone Number: 0000 0000</p>
+  <p>Email: aaa@gmail.com</p>
+  <p>Insta Page: ascasbcbi</p>
+  <p>Twitter: ascsaca</p>
+  </div>
+
+  <div id="location">
+    <h2 style="font-size: 30">Our Location</h2><br>
+    <p>You can find us at Level 2 near the library.</p>
+    <!-- <img href="add drawn image here when entering" -->
+  </div>
+
+  <div id="miscell_info">
+  <a href="{{ url_for('terms') }}><h2 style="font-size: 30">Terms & Regulations</h2></a>
+  </div>
+  <br><br><br><br><br><br><br><br><br>
+</footer>
+</body>
+</html>
+
+
+<script>
+  document.getElementById('menu_items').addEventListener('input', function() {
+    if (this.value.trim() !== '') {
+      document.getElementById('menu_feedback').disabled = false;
+    } else {
+      document.getElementById('menu_feedback').disabled = true;
+    }
+  });
+
+  document.getElementById("feedback_form").onsubmit = function(event) {
+    event.preventDefault(); // Prevent form submission
+    document.getElementById("modal_feedback").style.display = "block";
+  };
+  
+</script>
